@@ -99,7 +99,7 @@ public class GamePanel extends JPanel implements ActionListener {
                 rec^=3;
             }
             //apple
-            ImageIcon image = new ImageIcon("apple.png");
+            ImageIcon image = new ImageIcon("Images/apple.png");
             g.drawImage(image.getImage(), appleX, appleY, UNIT_SIZE,UNIT_SIZE, this);        
             //snake
             for (int i=0;i<this.snakeBodyLength;i++) {
@@ -108,19 +108,19 @@ public class GamePanel extends JPanel implements ActionListener {
                     switch(this.direction)
                     {
                         case('U') -> { 
-                            faceU= new ImageIcon("snakeFaceU.png");
+                            faceU= new ImageIcon("Images/snakeFaceU.png");
                             g.drawImage(faceU.getImage(), x[i], y[i], UNIT_SIZE,UNIT_SIZE, this);
                         }
                         case('D') -> { 
-                            faceD= new ImageIcon("snakeFaceD.png");
+                            faceD= new ImageIcon("Images/snakeFaceD.png");
                             g.drawImage(faceD.getImage(), x[i], y[i], UNIT_SIZE,UNIT_SIZE, this);
                         }
                         case('L') -> { 
-                            faceL= new ImageIcon("snakeFaceL.png");
+                            faceL= new ImageIcon("Images/snakeFaceL.png");
                             g.drawImage(faceL.getImage(), x[i], y[i], UNIT_SIZE,UNIT_SIZE, this);
                         }
                         case('R') -> { 
-                            faceR= new ImageIcon("snakeFaceR.png");
+                            faceR= new ImageIcon("Images/snakeFaceR.png");
                             g.drawImage(faceR.getImage(), x[i], y[i], UNIT_SIZE,UNIT_SIZE, this);
                         }        
                     }
